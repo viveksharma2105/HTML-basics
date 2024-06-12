@@ -6,7 +6,7 @@
     <title>Images</title>
     <style>
         body{
-            background: #575757;
+            background: #4d4d4d;
         }
     </style>
 </head>
@@ -15,8 +15,51 @@
      
     <picture>
         <source media="(min-width: 650px)" srcset="./image.jpg"/>
-        <img  src="./image.jpg" width="440" />
+        <source media="(min-width: 450px)" srcset="./image.jpg"/>
+        <img  src="./image.jpg" width="200" />
        
     </picture> 
+
+
+    <!--image maping (clicking on a specific part of image and there will be a link)-->
+    <picture>
+       
+        <img src="computer.png" usemap="#image-map" width="300">
+    </picture>
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="120,147,497,322" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="597,105,930,374" shape="rect">
+    <area onclick="three()" target="" alt="" title="" href="" coords="997,110,1402,326" shape="rect">
+    <area onclick="four()" target="" alt="" title="" href="" coords="95,567,450,817" shape="rect">
+    <area onclick="five()" target="" alt="" title="" href="" coords="537,508,840,838" shape="rect">
+    <area onclick="six()" target="" alt="" title="" href="" coords="1041,496,1288,867" shape="rect">
+</map>
+<script>
+    function one(){
+        alert ("This is Keyboard")
+    }
+    
+    function two(){
+        alert ("This is Monitor")
+    }
+    
+    function three(){
+        alert ("This is Printer")
+    }
+    
+    function four(){
+        alert ("This is Mouse")
+    }
+    
+    function five(){
+        alert ("This is CPU")
+    }
+    
+    function six(){
+        alert ("This is Headphone")
+    }
+    
+</script>
+   
 </body>
 </html>         
